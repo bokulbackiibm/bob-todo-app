@@ -6,15 +6,15 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --primary-hover: #4f46e5;
-    --success-color: #10b981;
-    --danger-color: #ef4444;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
+    --primary-color: #0f62fe;
+    --primary-hover: #0353e9;
+    --success-color: #24a148;
+    --danger-color: #da1e28;
+    --text-primary: #161616;
+    --text-secondary: #525252;
     --bg-primary: #ffffff;
-    --bg-secondary: #f9fafb;
-    --border-color: #e5e7eb;
+    --bg-secondary: #f4f4f4;
+    --border-color: #e0e0e0;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -23,8 +23,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f62fe 0%, #001d6c 100%);
     min-height: 100vh;
     padding: 20px;
     color: var(--text-primary);
@@ -144,7 +144,7 @@ input[type="text"]::placeholder {
 }
 
 .btn-success:hover {
-    background: #059669;
+    background: #198038;
 }
 
 .btn-danger {
@@ -155,7 +155,7 @@ input[type="text"]::placeholder {
 }
 
 .btn-danger:hover {
-    background: #dc2626;
+    background: #ba1b23;
 }
 
 /* Stats */
