@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 My Todo List</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <div class="add-todo-section">
+            <form id="todo-form">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="todo-title" 
+                        placeholder="What needs to be done?" 
+                        required
+                        autocomplete="off"
+                    >
+                    <input 
+                        type="text" 
+                        id="todo-description" 
+                        placeholder="Add a description (optional)" 
+                        autocomplete="off"
+                    >
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-icon">+</span>
+                    Add Todo
+                </button>
+            </form>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Total</span>
+                <span class="stat-value" id="total-count">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Active</span>
+                <span class="stat-value" id="active-count">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Completed</span>
+                <span class="stat-value" id="completed-count">0</span>
+            </div>
+        </div>
+
+        <div class="todos-container">
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading todos...</p>
+            </div>
+            
+            <div id="error-message" class="error-message" style="display: none;">
+                <span class="error-icon">⚠️</span>
+                <span id="error-text"></span>
+            </div>
+
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <div class="empty-icon">📋</div>
+                <h3>No todos yet</h3>
+                <p>Add your first todo to get started!</p>
+            </div>
+
+            <ul id="todo-list" class="todo-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with Bob 🤖</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
